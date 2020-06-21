@@ -1,5 +1,5 @@
 {
-  "name": "vuex-practice",
+  "name": "vuex-practice-two",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "es6-promise": "^4.2.8",
-    "vue": "^2.6.11",
-    "vuex": "^3.4.0"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
