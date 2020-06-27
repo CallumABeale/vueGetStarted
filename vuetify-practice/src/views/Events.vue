@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<h2>Home Page placeholder</h2>
+		<h2>These are the events that you have been to</h2>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'HomePage',
+	name: 'Events',
 };
 </script>
 

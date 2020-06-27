@@ -1,9 +1,33 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import HomePage from './../components/HomePage.vue';
+import VueRouter from 'vue-router';
+import Gear from '../views/Gear.vue';
+import Events from '../views/Events.vue';
+import Statistics from '../views/Statistics.vue';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
-	routes: [{ path: '/', component: HomePage }],
+const routes = [
+	{
+		path: '/gear',
+		name: 'gear',
+		component: Gear,
+	},
+	{
+		path: '/events',
+		name: 'events',
+		component: Events,
+	},
+	{
+		path: '/statistics',
+		name: 'statistics',
+		component: Statistics,
+	},
+];
+
+const router = new VueRouter({
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes,
 });
+
+export default router;

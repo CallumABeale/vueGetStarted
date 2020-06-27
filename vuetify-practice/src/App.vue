@@ -1,16 +1,19 @@
 <template>
 	<div id="app">
-		<Tabs />
-		<router-view />
+		<v-app>
+			<Homepage />
+			<Tabs />
+		</v-app>
 	</div>
 </template>
 
 <script>
 import Tabs from './components/Tabs.vue';
+import Homepage from './views/Homepage.vue';
 
 export default {
 	name: 'App',
-	components: { Tabs },
+	components: { Tabs, Homepage },
 };
 </script>
 
